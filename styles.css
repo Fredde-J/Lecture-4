@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display:flex;
+    height: 100vh;
+}
+
+.musicList{
+    background-color: darkturquoise;
+    width:50%
+}
+
+.musicPlayer{
+    background-color: dimgray;
+    width: 50%;
+}
+
+.header{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+
+}
+.picture{
+    display:flex;
+    justify-content: center;
+}
+
+.playerButtons{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 100px !important;
+
+
+}
+.fa-play-circle{
+  
+    color: darkred;
+}
+
+
+h1{
+    margin:0%;
+    font-size: 30px;
+}
+
+@media screen and (max-width:678px){
+    .second{
+        background-color: darkred;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        display: inline-block;
+        width: 100%;
+    }
+
+}
