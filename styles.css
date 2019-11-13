@@ -1,18 +1,24 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(/bilder/smoke.jpg);
+    background-size: cover;
+}
 main{
     display:flex;
     height: 100vh;
+    opacity: 0,3;
 }
 
 .musicList{
-    background-color: darkturquoise;
-    width:50%
+    background-color: rgb(35, 47, 48,0.9);
+    width:50%;
+    
 }
 
 .musicPlayer{
-    background-color: dimgray;
+    background-color: rgb(248, 241, 241);
     width: 50%;
 }
 
@@ -25,6 +31,27 @@ main{
 .picture{
     display:flex;
     justify-content: center;
+}
+.songInfo{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+}
+.song{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.timeLine{
+    display: flex;
+    justify-content: space-evenly;
+}
+.timeBar{
+    background-color: black;
+    height: 10px;
+    width: 60%;
+    border: 10px rgb(74, 231, 2);
 }
 
 .playerButtons{
@@ -44,6 +71,10 @@ main{
 h1{
     margin:0%;
     font-size: 30px;
+}
+p{
+    margin:0%;
+    display:block;
 }
 
 @media screen and (max-width:678px){
